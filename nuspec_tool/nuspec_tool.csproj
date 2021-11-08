@@ -1,8 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="../buildtools/Topten.props" />
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>translatetool</ToolCommandName>
+    <TtsCodeSign>True</TtsCodeSign>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>Copyright © 2014-2021 Topten Software.  All Rights Reserved</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageIcon>nuget-icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/toptensoftware/nuspec_tool</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/toptensoftware/nuspec_tool</RepositoryUrl>
+    <PackageTags>nuspec, nuget, nupkg, version</PackageTags>
+    <Description>A simple command line tool to update the version numbers of package dependencies in nuspec files from project files.</Description>
+  </PropertyGroup>
+
 
 </Project>
