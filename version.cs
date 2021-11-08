@@ -3,13 +3,13 @@
 using System;
 using System.Reflection;
 [assembly: AssemblyCopyright("Copyright © 2021 Topten Software. All Rights Reserved")]
-[assembly: AssemblyVersion("0.1.100")]
-[assembly: AssemblyFileVersion("0.1.100")]
+[assembly: AssemblyVersion("0.1.101")]
+[assembly: AssemblyFileVersion("0.1.101")]
 [assembly: AssemblyCompany("Topten Software")]
 [assembly: AssemblyProduct("nuspec_tool")]
 
 static class BuildInfo
 {
-	public static DateTime Date = new DateTime(2021, 11, 8, 23, 42, 36, DateTimeKind.Utc);
+	public static DateTime Date = new DateTime(2021, 11, 8, 23, 50, 6, DateTimeKind.Utc);
 }
 	
