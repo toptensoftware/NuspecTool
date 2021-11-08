@@ -29,7 +29,7 @@ function dotnet_build(proj)
 }
 
 // Build platform editions
-dotnet_build("./nuspec_tool/nuspec_tool.csproj");
+dotnet_build("./Topten.NuspecTool/Topten.NuspecTool.csproj");
 
 
 if (bt.options.official)
@@ -38,8 +38,8 @@ if (bt.options.official)
     bt.git_tag();
 
     // Push nuget packages
-//    bt.run(`dotnet nuget push`,
-//           `./Build/Release/*.${bt.options.version.build}.nupkg`,
-//           `--source "Topten GitHub"`);
+    bt.run(`dotnet nuget push`,
+           `./Build/Release/*.${bt.options.version.build}.nupkg`,
+           `--source nuget.org`);
 }
 

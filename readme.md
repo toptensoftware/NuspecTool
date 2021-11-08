@@ -9,6 +9,12 @@ To update a .nuspec file with package versions from a .csproj files:
   > nuspec_tool myproj.csproj myproj.nuspec
 
 
+## Installation
+
+Install as a dotnet global tool:
+
+> dotnet tool install -g Topten.NuspecTool
+
 ## Usage
 
 ```
