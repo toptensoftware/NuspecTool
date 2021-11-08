@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "nuspec_tool": {
+      "commandName": "Project",
+      "commandLineArgs": "Topten.GuiKit\\Topten.GuiKit.common.props Package\\Topten.GuiKit.nuspec",
+      "workingDirectory": "C:\\Users\\Brad\\Projects\\GuiKit\\"
+    }
+  }
+}
