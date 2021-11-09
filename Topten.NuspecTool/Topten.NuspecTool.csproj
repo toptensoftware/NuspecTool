@@ -18,8 +18,12 @@
     <PackageProjectUrl>https://github.com/toptensoftware/NuspecTool</PackageProjectUrl>
     <RepositoryUrl>https://github.com/toptensoftware/NuspecTool</RepositoryUrl>
     <PackageTags>nuspec, nuget, nupkg, version</PackageTags>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
     <Description>A command line tool to update the version numbers of package dependencies in nuspec files from project files.</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="..\readme.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>
